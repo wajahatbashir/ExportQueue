@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Config/etc/cron.xsd">
+    <group id="default">
+        <job name="wb_exportqueue_process" instance="WB\ExportQueue\Cron\ProcessExportQueue" method="execute">
+            <schedule>* * * * *</schedule>
+        </job>
+    </group>
+</config>
